@@ -6,7 +6,7 @@ const writeDataToExcel = require('./writeToExcel');
 
 async function createInstance() {
     const browser = await puppeteer.launch({
-        headless: false,
+        // headless: false, // uncomment to see the browser in action
     });
 
     const pages = await browser.pages();

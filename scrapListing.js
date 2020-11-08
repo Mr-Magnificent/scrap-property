@@ -13,6 +13,8 @@ function getPageListingDataPromise(url) {
 
             const data = {};
 
+            data.address = $('h1').text().substring(19);
+
             $('.itemFacts > tbody > tr').each((_, ele) => {
                 const field = $(ele).find('th > span');
                 const value = $(ele).find('td > span');

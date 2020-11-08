@@ -30,9 +30,9 @@ async function writeDataToExcel(data) {
 
     try {
         const filename = `${new Date().toDateString()}-listing.xlsx`;
-        await fs.open(filename, 'w');
+        const file = await fs.open(filename, 'w');
         await workbook.xlsx.writeFile(filename).then(() => console.log('file saved')).catch((err) => console.log(err));
-        
+        file.close();
     } catch (err) {
         console.log(err);
     }

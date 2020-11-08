@@ -1,0 +1,6 @@
+{
+    "address": "Haabersti",
+    "type": "Apartments",
+    "#rooms": [2, 3],
+    "ttype": "Rent"
+}
